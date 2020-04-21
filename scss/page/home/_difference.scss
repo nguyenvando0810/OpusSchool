@@ -1,0 +1,57 @@
+.difference {
+  height: 550px;
+  background-color: $color-secondary;
+  background-image: url("../images/bg-difference.png");
+  background-position: 0 22%;
+  padding-top: 120px;
+  padding-bottom: 90px;
+  color: $color-white;
+
+  .difference-content {
+    padding-left: 30px;
+  }
+
+  .difference-title {
+    font-family: 'Merriweather';
+    font-weight: bold;
+    font-size: 26px;
+    margin-top: -8px;
+    margin-bottom: 0;
+  }
+
+  .difference-description {
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 10px;
+    line-height: 25px;
+  }
+
+  @media only screen and (max-width: 991px) and (min-width: 768px) {
+    padding-top: 50px;
+    height: auto;
+    padding-bottom: 50px;
+
+    .difference-content {
+      padding-left: 15px;
+    }
+
+    .difference-title {
+      margin-top: 15px;
+    }
+  }
+
+
+  @media only screen and (max-width: 767px) {
+    padding-top: 50px;
+    height: auto;
+    padding-bottom: 30px;
+
+    .difference-content {
+      padding-left: 15px;
+    }
+
+    .difference-title {
+      margin-top: 15px;
+    }
+  }
+}

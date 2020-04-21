@@ -1,0 +1,12 @@
+<svg width="1440" height="697" viewBox="0 0 1440 697" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M519 523.001C296.6 412.601 43.0002 497.001 -56.9998 512.001C-82.3331 589.334 -154.8 601 -93.9998 625C-17.9998 655 84.0002 652 252 667C386.4 679 1197.67 692.667 1553 625C1545 440 1339.83 415.366 1219 421C1026 430 797 661.001 519 523.001Z" fill="#599525"/>
+<path d="M414 432.328C170.8 395.528 31.3333 527.661 -8 598.328L-184 697H1802C1766.67 596.333 1701.2 665.528 1730 638.328C1766 604.328 1638 368.328 1624 364.328C1610 360.328 1456 392.328 1206 494.328C956 596.328 718 478.328 414 432.328Z" fill="#79B643"/>
+<circle opacity="0.4" cx="290.5" cy="87.5" r="28.5" stroke="#D5D5D5" stroke-width="10"/>
+<circle opacity="0.4" cx="743.5" cy="429.5" r="28.5" stroke="#D5D5D5" stroke-width="10"/>
+<circle opacity="0.9" cx="573.5" cy="215.5" r="14.5" stroke="#D5D5D5" stroke-width="8"/>
+<circle cx="1292.5" cy="267.5" r="28.5" stroke="#D5D5D5" stroke-width="10"/>
+<circle opacity="0.6" cx="1429.5" cy="91.5" r="53" stroke="#79B643" stroke-width="15"/>
+<circle opacity="0.8" cx="975" cy="16" r="13" stroke="#79B643" stroke-width="6"/>
+<circle opacity="0.8" cx="-11" cy="40" r="28" stroke="#79B643" stroke-width="8"/>
+<circle cx="135" cy="377" r="13" stroke="#79B643" stroke-width="6"/>
+</svg>

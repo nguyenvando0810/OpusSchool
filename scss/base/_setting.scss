@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Font;
+  src: url('../fonts/Inter-Regular.woff');
+  font-weight: bold;
+}
+
+$color-primary: #79B643;
+$color-secondary: #EA7F27;
+$color-white: #FFFFFF;
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+.btn {
+  color: $color-white;
+  font-weight: bold;
+  background-color: $color-primary;
+  line-height: 1.4;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 6px;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus,
+  &:active,
+  &:hover,
+  &:visited {
+    outline: none;
+    box-shadow: none;
+  }
+}

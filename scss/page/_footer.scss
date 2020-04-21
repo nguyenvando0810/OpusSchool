@@ -1,0 +1,111 @@
+.footer {
+  background-color: #0B0127;
+  padding: 35px 0;
+
+  .logo-footer {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .icons {
+    text-align: center;
+
+    a {
+      margin-right: 40px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .fa {
+      color: #929292;
+      font-size: 18px;
+    }
+  }
+
+  .footer-bottom {
+    margin-top: 30px;
+
+    hr {
+      border-top: 1px solid $color-white;
+      opacity: 0.15;
+      margin: 0;
+    }
+
+    .footer-content {
+      padding: 30px 5px;
+      font-size: 13px;
+      color: $color-white;
+
+      .title {
+        color: $color-secondary;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      div,
+      a {
+        margin-bottom: 10px;
+      }
+
+      a {
+        display: block;
+        color: $color-white;
+
+        &:hover {
+          color: $color-secondary;
+          text-decoration: none;
+        }
+      }
+
+      .input-mail {
+        position: relative;
+        margin-bottom: 15px;
+
+        img {
+          position: absolute;
+          width: 15px;
+          top: 12px;
+          left: 10px;
+        }
+
+        span {
+          width: 23px;
+          height: 1px;
+          transform: rotate(90deg);
+          position: absolute;
+          top: 18px;
+          left: 22px;
+          background-color: #656565;
+          opacity: 0.3;
+        }
+
+        .form-control {
+          height: 36px;
+          border: 1px solid #CACACA;
+          border-radius: 3px;
+          padding-left: 40px;
+          font-size: 14px;
+
+          &::placeholder {
+            color: #BFBFBF;
+          }
+        }
+      }
+
+      .btn-confirm {
+        background-color: $color-secondary;
+        text-transform: uppercase;
+        padding: 8px 17px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+      }
+    }
+  }
+}

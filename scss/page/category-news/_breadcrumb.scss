@@ -1,0 +1,28 @@
+.breadcrumb-category {
+  background-color: #F9F9F9;
+
+  .breadcrumb {
+    background-color: transparent;
+    padding: 20px 0;
+    margin-bottom: 0
+  }
+
+  .breadcrumb-item a {
+    color: #333333;
+    font-weight: bold;
+  }
+
+  .breadcrumb-item.active a {
+    color: #757575;
+    font-weight: normal;
+  }
+
+  .breadcrumb-item+.breadcrumb-item {
+    padding-left: 10px;
+
+    &::before {
+      color: #4F4F4F;
+      padding-right: 10px;
+    }
+  }
+}
