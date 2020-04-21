@@ -1,0 +1,86 @@
+.pagination-news {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #3A3A3A;
+  font-size: 13px;
+
+  .select-page {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-right: 10px;
+    }
+
+    select {
+      height: 35px !important;
+      width: 55px;
+      color: #3A3A3A;
+      font-size: 13px;
+      padding-left: 10px;
+      padding-right: 10px;
+      -moz-appearance: none;
+      border: 1px solid #ECECEC;
+      background-image: url('../images/icon-caret-down.png');
+      background-repeat: no-repeat;
+      background-size: 8px;
+      background-position: 85% 50%;
+      border-radius: 5px;
+      /* Firefox */
+      -webkit-appearance: none;
+      /* Safari and Chrome */
+      appearance: none;
+      cursor: pointer;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .pagination {
+    margin-bottom: 0;
+
+    .page-item {
+      border-radius: 5px;
+      margin-right: 5px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.active .page-link {
+        color: $color-secondary;
+      }
+
+      .page-link {
+        border-radius: 5px;
+        padding: 8px 13px;
+        border: 1px solid #ECECEC;
+        color: #3A3A3A;
+        background-color: transparent;
+        transition: 0.3s;
+        min-width: 34px;
+        min-height: 34px;
+
+        &:hover,
+        &:focus {
+          color: $color-secondary;
+          box-shadow: none;
+
+          .fa {
+            color: $color-secondary;
+          }
+        }
+
+        .fa {
+          color: #000000;
+          font-size: 15px;
+          top: -0.5px;
+          position: relative;
+        }
+      }
+    }
+  }
+}
