@@ -18,7 +18,7 @@ $(document).ready(function () {
 	});
 
 	// Slide header
-	$('.header-banner').slick({
+	$('.header-banner, .company-intro-banner').slick({
 		infinite: true,
 		speed: 300,
 		slidesToShow: 1,
