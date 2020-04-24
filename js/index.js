@@ -18,10 +18,18 @@ $(document).ready(function () {
 	});
 
 	// Slide header
-	$('.header-banner, .company-intro-banner').slick({
+	$('.header-banner, .company-intro-banner, .courses-banner').slick({
 		infinite: true,
 		speed: 300,
 		slidesToShow: 1,
+		arrows: true
+	});
+
+	$('.slide-image').slick({
+		infinite: true,
+		speed: 300,
+		slidesToShow: 6,
+		slidesToScroll: 6,
 		arrows: true
 	});
 

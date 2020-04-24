@@ -1,0 +1,130 @@
+.overview {
+  margin-top: 55px;
+
+  .tab-overview {
+    background: #FFEAD9;
+    border-radius: 8px;
+    height: 60px;
+
+    .nav-link {
+      color: #757575;
+      margin-left: 60px;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 20px 0 10px 0;
+      position: relative;
+      transition: 0.3s;
+
+      &:hover {
+        color: $color-secondary;
+      }
+
+      &.active {
+        background: transparent;
+        color: $color-secondary;
+
+        &::after {
+          content: '';
+          height: 5px;
+          width: 100%;
+          background-color: $color-secondary;
+          border-radius: 5px 5px 0px 0px;
+          position: absolute;
+          display: block;
+          bottom: -5px;
+        }
+      }
+    }
+  }
+
+  .tab-pane {
+    font-size: 14px;
+    line-height: 150%;
+    color: #333333;
+    padding: 0 15px;
+
+    .overview-image {
+      height: 335px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .title {
+      color: #000000;
+      font-weight: bold;
+    }
+  }
+
+  @media only screen and (max-width: 1199px) and (min-width: 992px) {
+    .tab-pane .overview-image {
+      height: 285px;
+    }
+  }
+
+  @media only screen and (max-width: 991px) and (min-width: 768px) {
+    .overview {
+      margin-top: 30px;
+
+      .tab-overview .nav-link {
+        margin-left: 15px;
+      }
+
+      .tab-overview,
+      .tab-content {
+        margin-bottom: 30px !important;
+      }
+
+      .tab-pane {
+        padding: 0;
+
+        .overview-image {
+          height: 225px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .overview {
+      margin-top: 30px;
+
+      .tab-overview {
+        height: auto;
+        display: block;
+
+        .nav-link {
+          margin-left: 0;
+          padding: 15px 20px;
+          margin-right: 40px;
+
+          &.active {
+            &::after {
+              content: '';
+              height: 5px;
+              width: 100%;
+              bottom: 0;
+            }
+          }
+        }
+
+        .tab-overview,
+        .tab-content {
+          margin-bottom: 30px !important;
+        }
+      }
+
+      .tab-overview,
+      .tab-content {
+        margin-bottom: 30px !important;
+      }
+
+      .tab-pane {
+        padding: 0;
+
+        .overview-image {
+          height: 225px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+  <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+  <title>Opus Schools</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-left">
+            <span>
+              <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.7461 3.47461C12.1621 3.93164 11.4258 4.49023 8.83594 6.36914C8.32812 6.75 7.38867 7.58789 6.5 7.58789C5.58594 7.58789 4.67188 6.75 4.13867 6.36914C1.54883 4.49023 0.8125 3.93164 0.228516 3.47461C0.126953 3.39844 0 3.47461 0 3.60156V8.78125C0 9.4668 0.533203 10 1.21875 10H11.7812C12.4414 10 13 9.4668 13 8.78125V3.60156C13 3.47461 12.8477 3.39844 12.7461 3.47461ZM6.5 6.75C7.08398 6.77539 7.92188 6.01367 8.35352 5.70898C11.7305 3.27148 11.9844 3.04297 12.7461 2.43359C12.8984 2.33203 13 2.1543 13 1.95117V1.46875C13 0.808594 12.4414 0.25 11.7812 0.25H1.21875C0.533203 0.25 0 0.808594 0 1.46875V1.95117C0 2.1543 0.0761719 2.33203 0.228516 2.43359C0.990234 3.04297 1.24414 3.27148 4.62109 5.70898C5.05273 6.01367 5.89062 6.77539 6.5 6.75Z"
+                  fill="white" />
+              </svg> Support@Opus.edu.vn</span>
+            <span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.482422 1.25977L3.12305 0.650391C3.40234 0.574219 3.70703 0.726562 3.83398 1.00586L5.05273 3.84961C5.1543 4.10352 5.07812 4.38281 4.875 4.56055L3.32617 5.83008C4.24023 7.75977 5.83984 9.38477 7.82031 10.3242L9.08984 8.77539C9.26758 8.57227 9.54688 8.49609 9.80078 8.59766L12.6445 9.81641C12.9238 9.94336 13.0508 10.248 13 10.5273L12.3906 13.168C12.3145 13.4473 12.0859 13.625 11.7812 13.625C5.28125 13.625 0 8.36914 0 1.84375C0 1.56445 0.203125 1.33594 0.482422 1.25977Z"
+                  fill="white" />
+              </svg>039 365 8745</span>
+          </div>
+          <div class="col-md-6 text-right">
+            <span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+                style="margin-right: 5px;">
+                <path
+                  d="M6.9935 0.333344C3.3135 0.333344 0.333496 3.32001 0.333496 7.00001C0.333496 10.68 3.3135 13.6667 6.9935 13.6667C10.6802 13.6667 13.6668 10.68 13.6668 7.00001C13.6668 3.32001 10.6802 0.333344 6.9935 0.333344ZM11.6135 4.33334H9.64683C9.4335 3.50001 9.12683 2.70001 8.72683 1.96001C9.9535 2.38001 10.9735 3.23334 11.6135 4.33334ZM7.00016 1.69334C7.5535 2.49334 7.98683 3.38001 8.2735 4.33334H5.72683C6.0135 3.38001 6.44683 2.49334 7.00016 1.69334ZM1.84016 8.33334C1.7335 7.90668 1.66683 7.46001 1.66683 7.00001C1.66683 6.54001 1.7335 6.09334 1.84016 5.66668H4.0935C4.04016 6.10668 4.00016 6.54668 4.00016 7.00001C4.00016 7.45334 4.04016 7.89334 4.0935 8.33334H1.84016ZM2.38683 9.66668H4.3535C4.56683 10.5 4.8735 11.3 5.2735 12.04C4.04683 11.62 3.02683 10.7733 2.38683 9.66668ZM4.3535 4.33334H2.38683C3.02683 3.22668 4.04683 2.38001 5.2735 1.96001C4.8735 2.70001 4.56683 3.50001 4.3535 4.33334ZM7.00016 12.3067C6.44683 11.5067 6.0135 10.62 5.72683 9.66668H8.2735C7.98683 10.62 7.5535 11.5067 7.00016 12.3067ZM8.56016 8.33334H5.44016C5.38016 7.89334 5.3335 7.45334 5.3335 7.00001C5.3335 6.54668 5.38016 6.10001 5.44016 5.66668H8.56016C8.62016 6.10001 8.66683 6.54668 8.66683 7.00001C8.66683 7.45334 8.62016 7.89334 8.56016 8.33334ZM8.72683 12.04C9.12683 11.3 9.4335 10.5 9.64683 9.66668H11.6135C10.9735 10.7667 9.9535 11.62 8.72683 12.04ZM9.90683 8.33334C9.96016 7.89334 10.0002 7.45334 10.0002 7.00001C10.0002 6.54668 9.96016 6.10668 9.90683 5.66668H12.1602C12.2668 6.09334 12.3335 6.54001 12.3335 7.00001C12.3335 7.46001 12.2668 7.90668 12.1602 8.33334H9.90683Z"
+                  fill="white" />
+              </svg>
+              <span class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Tiếng Việt (VI)</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown09">
+                  <div class="dropdown-item">Tiếng Việt (VI)</div>
+                  <div class="dropdown-item">Tiếng Anh (EN)</div>
+                </div>
+              </span>
+            </span>
+            <span>
+              <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.15625 5.90625H2.78125V4.28125C2.78125 4.07812 2.98438 3.875 3.1875 3.875H4C4.22852 3.875 4.40625 4.07812 4.40625 4.28125V5.90625H6.03125C6.25977 5.90625 6.4375 6.10938 6.4375 6.3125V7.125C6.4375 7.35352 6.25977 7.53125 6.03125 7.53125H4.40625V9.15625C4.40625 9.38477 4.22852 9.5625 4 9.5625H3.1875C2.98438 9.5625 2.78125 9.38477 2.78125 9.15625V7.53125H1.15625C0.953125 7.53125 0.75 7.35352 0.75 7.125V6.3125C0.75 6.10938 0.953125 5.90625 1.15625 5.90625ZM11.3125 7.125C9.53516 7.125 8.0625 5.67773 8.0625 3.875C8.0625 2.09766 9.53516 0.625 11.3125 0.625C13.1152 0.625 14.5625 2.09766 14.5625 3.875C14.5625 5.67773 13.1152 7.125 11.3125 7.125ZM9.05273 7.9375H9.48438C10.043 8.2168 10.6523 8.34375 11.3125 8.34375C11.9727 8.34375 12.6074 8.2168 13.166 7.9375H13.5977C15.4766 7.9375 17 9.48633 17 11.3652V12.4062C17 13.0918 16.4668 13.625 15.7812 13.625H6.84375C6.18359 13.625 5.625 13.0918 5.625 12.4062V11.3652C5.625 9.48633 7.17383 7.9375 9.05273 7.9375Z"
+                  fill="white" />
+              </svg>Đăng ký</span>
+            <span>
+              <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.84375 6.3125H2.45312V4.48438C2.45312 2.37695 4.20508 0.625 6.3125 0.625C8.44531 0.625 10.1719 2.37695 10.1719 4.48438V6.3125H10.7812C11.4668 6.3125 12 6.87109 12 7.53125V12.4062C12 13.0918 11.4668 13.625 10.7812 13.625H1.84375C1.18359 13.625 0.625 13.0918 0.625 12.4062V7.53125C0.625 6.87109 1.18359 6.3125 1.84375 6.3125ZM4.48438 6.3125H8.14062V4.48438C8.14062 3.49414 7.32812 2.65625 6.3125 2.65625C5.32227 2.65625 4.48438 3.49414 4.48438 4.48438V6.3125Z"
+                  fill="white" />
+              </svg> Đăng nhập</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-xl navbar-light header-menu">
+      <div class="container">
+        <a class="navbar-brand menu__logo" href="./home-page.html">
+          <img src="./images/logo.svg" alt="Logo">
+        </a>
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="./images/menu.svg" width="30" height="30" alt="">
+        </button>
+        <div class="collapse navbar-collapse " id="collapsibleNavId">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./home-page.html">Trang chủ</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Giới thiệu</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Khóa học
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Adapted English (3 - 7 tuổi)</a>
+                <a class="dropdown-item" href="#">Smart English (6 - 16 tuổi)</a>
+                <a class="dropdown-item" href="#">Active English (trên 17 tuổi)</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./category-news.html">Tin tức</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kiểm tra trực tuyến</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tuyển dụng</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Liên hệ</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-register">Đăng ký học</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="courses">
+    <div class="courses-banner banner-slide">
+      <div class="courses-item">
+        <!-- <img src="./images/image-intro-company.png" alt="banner"> -->
+        <div class="item-content">
+          <h2 class="title">ADAPTED ENGLISH</h2>
+          <div class="bg-bottom"></div>
+          <p class="sub-title">Bước khởi đầu tuyệt vời nâng đỡ những tài năng nhí</p>
+        </div>
+      </div>
+      <div class="courses-item">
+        <!-- <img src="./images/image-intro-company.png" alt="banner"> -->
+        <div class="item-content">
+          <h2 class="title">ADAPTED ENGLISH</h2>
+          <div class="bg-bottom"></div>
+          <p class="sub-title">Bước khởi đầu tuyệt vời nâng đỡ những tài năng nhí</p>
+        </div>
+      </div>
+      <div class="courses-item">
+        <!-- <img src="./images/image-intro-company.png" alt="banner"> -->
+        <div class="item-content">
+          <h2 class="title">ADAPTED ENGLISH</h2>
+          <div class="bg-bottom"></div>
+          <p class="sub-title">Bước khởi đầu tuyệt vời nâng đỡ những tài năng nhí</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="course-form">
+      <div class="container">
+        <div class="form-group group-input">
+          <div class="form">
+            <label>Hình thức đăng ký </label>
+            <select class="form-control">
+              <option>Học một mình</option>
+              <option>Học theo nhóm</option>
+            </select>
+          </div>
+          <div class="name">
+            <label>Họ và tên</label>
+            <input class="form-control" placeholder="Nhập họ và tên">
+          </div>
+          <div class="year">
+            <label>Năm sinh</label>
+            <select class="form-control">
+              <option>2000</option>
+              <option>2001</option>
+              <option>2002</option>
+              <option>2003</option>
+            </select>
+          </div>
+          <div class="phone">
+            <label>Điện thoại</label>
+            <input class="form-control" placeholder="0937 465 876">
+          </div>
+          <div class="student" id="student">
+            <label>Số người học</label>
+            <div class="number">
+              <span class="minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+              <input type="text" value="1" id="numberStudent" class="form-control" />
+              <span class="plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+            </div>
+          </div>
+          <div class="adress">
+            <label>Địa chỉ mong muốn học</label>
+            <input class="form-control" placeholder="Ngõ 1, Khâm Thiên, Đống Đa, Hà Nội">
+          </div>
+          <button class="btn btn-search">
+            <img src="./images/icon-search.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="overview-wrap">
+      <div class="container">
+        <div class="overview">
+          <ul class="nav nav-pills mb-5 tab-overview" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-overview-tab" data-toggle="pill" href="#pills-ovrview" role="tab"
+                aria-controls="pills-ovrview" aria-selected="true">Tổng quan khóa học</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-vision-tab" data-toggle="pill" href="#pills-vision" role="tab"
+                aria-controls="pills-vision" aria-selected="false">Mục tiêu </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-motto-tab" data-toggle="pill" href="#pills-motto" role="tab"
+                aria-controls="pills-motto" aria-selected="false">ĐIểm khác biệt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-value-tab" data-toggle="pill" href="#pills-value" role="tab"
+                aria-controls="pills-value" aria-selected="false">Mô hình và phương pháp</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-operation-tab" data-toggle="pill" href="#pills-operation" role="tab"
+                aria-controls="pills-operation" aria-selected="false">Chương trình giảng dạy</a>
+            </li>
+          </ul>
+
+          <div class="tab-content mb-5" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-ovrview" role="tabpanel"
+              aria-labelledby="pills-overview-tab">
+              <div class="row">
+                <div class="col-md-6">
+                  <p>
+                    Khóa học giúp các con làm quen và phát triển ngôn ngữ từ sớm, hình thành tình yêu với môn học tiếng
+                    Anh. Opus English chính là bước khởi đầu tuyệt vời để nâng đỡ những tài năng nhí.
+                  </p>
+                  <div class="title">Mục tiêu</div>
+                  <div>
+                    1. Làm quen và tiếp cận các kỹ năng tiếng Anh một cách vui vẻ và hiệu quả
+                  </div>
+                  <div>
+                    2. Xây dựng lộ trình học tập toàn diện cho trẻ chuẩn bị cho các kỳ thi tiếng Anh quốc tế.
+                  </div>
+                  <div>
+                    3. Tăng khả năng phản xạ, phát âm chuẩn, tự tin giao tiếp.
+                  </div>
+                  <div>
+                    4. Phát triển toàn diện về ngôn ngữ, cảm xúc, giáo dục và tư duy.
+                  </div>
+                  <div>
+                    5. Rèn luyện kỹ năng sống và các giá trị đạo đức chuẩn bị hành trang bước vào cấp tiểu học.
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <img src="./images/image-content-course.png" class="overview-image" alt="image-content-course">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-vision" role="tabpanel" aria-labelledby="pills-vision-tab">
+              <div class="row">
+                <div class="col-md-6">
+                  <p>
+                    Khóa học giúp các con làm quen và phát triển ngôn ngữ từ sớm, hình thành tình yêu với môn học tiếng
+                    Anh. Opus English chính là bước khởi đầu tuyệt vời để nâng đỡ những tài năng nhí.
+                  </p>
+                  <div class="title">Mục tiêu</div>
+                  <div>
+                    1. Làm quen và tiếp cận các kỹ năng tiếng Anh một cách vui vẻ và hiệu quả
+                  </div>
+                  <div>
+                    2. Xây dựng lộ trình học tập toàn diện cho trẻ chuẩn bị cho các kỳ thi tiếng Anh quốc tế.
+                  </div>
+                  <div>
+                    3. Tăng khả năng phản xạ, phát âm chuẩn, tự tin giao tiếp.
+                  </div>
+                  <div>
+                    4. Phát triển toàn diện về ngôn ngữ, cảm xúc, giáo dục và tư duy.
+                  </div>
+                  <div>
+                    5. Rèn luyện kỹ năng sống và các giá trị đạo đức chuẩn bị hành trang bước vào cấp tiểu học.
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <img src="./images/image-content-course.png" class="overview-image" alt="image-content-course">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-motto" role="tabpanel" aria-labelledby="pills-motto-tab">
+              <div class="row">
+                <div class="col-md-6">
+                  <p>
+                    Khóa học giúp các con làm quen và phát triển ngôn ngữ từ sớm, hình thành tình yêu với môn học tiếng
+                    Anh. Opus English chính là bước khởi đầu tuyệt vời để nâng đỡ những tài năng nhí.
+                  </p>
+                  <div class="title">Mục tiêu</div>
+                  <div>
+                    1. Làm quen và tiếp cận các kỹ năng tiếng Anh một cách vui vẻ và hiệu quả
+                  </div>
+                  <div>
+                    2. Xây dựng lộ trình học tập toàn diện cho trẻ chuẩn bị cho các kỳ thi tiếng Anh quốc tế.
+                  </div>
+                  <div>
+                    3. Tăng khả năng phản xạ, phát âm chuẩn, tự tin giao tiếp.
+                  </div>
+                  <div>
+                    4. Phát triển toàn diện về ngôn ngữ, cảm xúc, giáo dục và tư duy.
+                  </div>
+                  <div>
+                    5. Rèn luyện kỹ năng sống và các giá trị đạo đức chuẩn bị hành trang bước vào cấp tiểu học.
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <img src="./images/image-content-course.png" class="overview-image" alt="image-content-course">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-value" role="tabpanel" aria-labelledby="pills-value-tab">
+              <div class="row">
+                <div class="col-md-6">
+                  <p>
+                    Khóa học giúp các con làm quen và phát triển ngôn ngữ từ sớm, hình thành tình yêu với môn học tiếng
+                    Anh. Opus English chính là bước khởi đầu tuyệt vời để nâng đỡ những tài năng nhí.
+                  </p>
+                  <div class="title">Mục tiêu</div>
+                  <div>
+                    1. Làm quen và tiếp cận các kỹ năng tiếng Anh một cách vui vẻ và hiệu quả
+                  </div>
+                  <div>
+                    2. Xây dựng lộ trình học tập toàn diện cho trẻ chuẩn bị cho các kỳ thi tiếng Anh quốc tế.
+                  </div>
+                  <div>
+                    3. Tăng khả năng phản xạ, phát âm chuẩn, tự tin giao tiếp.
+                  </div>
+                  <div>
+                    4. Phát triển toàn diện về ngôn ngữ, cảm xúc, giáo dục và tư duy.
+                  </div>
+                  <div>
+                    5. Rèn luyện kỹ năng sống và các giá trị đạo đức chuẩn bị hành trang bước vào cấp tiểu học.
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <img src="./images/image-content-course.png" class="overview-image" alt="image-content-course">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-operation" role="tabpanel" aria-labelledby="pills-operation-tab">
+              <div class="row">
+                <div class="col-md-6">
+                  <p>
+                    Khóa học giúp các con làm quen và phát triển ngôn ngữ từ sớm, hình thành tình yêu với môn học tiếng
+                    Anh. Opus English chính là bước khởi đầu tuyệt vời để nâng đỡ những tài năng nhí.
+                  </p>
+                  <div class="title">Mục tiêu</div>
+                  <div>
+                    1. Làm quen và tiếp cận các kỹ năng tiếng Anh một cách vui vẻ và hiệu quả
+                  </div>
+                  <div>
+                    2. Xây dựng lộ trình học tập toàn diện cho trẻ chuẩn bị cho các kỳ thi tiếng Anh quốc tế.
+                  </div>
+                  <div>
+                    3. Tăng khả năng phản xạ, phát âm chuẩn, tự tin giao tiếp.
+                  </div>
+                  <div>
+                    4. Phát triển toàn diện về ngôn ngữ, cảm xúc, giáo dục và tư duy.
+                  </div>
+                  <div>
+                    5. Rèn luyện kỹ năng sống và các giá trị đạo đức chuẩn bị hành trang bước vào cấp tiểu học.
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <img src="./images/image-content-course.png" class="overview-image" alt="image-content-course">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="course-level-header">
+        <img src="./images/logo-small.svg" alt="">
+        <h3>Các cấp độ của Opus English</h3>
+        <img src="./images/icon-sub-orange.svg" alt="">
+        <p>Chương trình gồm 3 cấp độ với 6 khoá học với thời lượng từng khoá học khác nhau như 39h, 42h hoặc 36h </p>
+      </div>
+      <div class="course-level">
+        <div class="level-wrap">
+          <div class="level">Cấp độ 1</div>
+          <div class="level">Cấp độ 2</div>
+          <div class="level">Cấp độ 3</div>
+          <div class="level">Cấp độ 4</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-now">
+      <h2> Cùng bé bắt đầu hành trình trở thành công dân toàn cầu ngay hôm nay!</h2>
+      <button class="btn btn-contact">LIÊN HỆ NGAY VỚI CHÚNG TÔI</button>
+    </div>
+
+    <div class="slide-image">
+      <div class="slide-image-item">
+        <img src="./images/image-slide.png" alt="Image slide">
+      </div>
+      <div class="slide-image-item">
+        <img src="./images/image-slide1.png" alt="Image slide">
+      </div>
+      <div class="slide-image-item">
+        <img src="./images/image-slide2.png" alt="Image slide">
+      </div>
+      <div class="slide-image-item">
+        <img src="./images/image-slide3.png" alt="Image slide">
+      </div>
+      <div class="slide-image-item">
+        <img src="./images/image-slide4.png" alt="Image slide">
+      </div>
+      <div class="slide-image-item">
+        <img src="./images/image-slide5.png" alt="Image slide">
+      </div>
+      <div class="slide-image-item">
+        <img src="./images/image-slide6.png" alt="Image slide">
+      </div>
+      <div class="slide-image-item">
+        <img src="./images/image-slide.png" alt="Image slide">
+      </div>
+      <div class="slide-image-item">
+        <img src="./images/image-slide1.png" alt="Image slide">
+      </div>
+      <div class="slide-image-item">
+        <img src="./images/image-slide2.png" alt="Image slide">
+      </div>
+      <div class="slide-image-item">
+        <img src="./images/image-slide3.png" alt="Image slide">
+      </div>
+    </div>
+
+    <div class="roadmap">
+      <div class="container">
+        <div class="roadmap-header">
+          <img src="./images/logo-small.svg" alt="">
+          <h3>Các cấp độ của Opus English</h3>
+          <img src="./images/icon-sub-orange.svg" alt="">
+        </div>
+
+        <div class="roadmap-img text-center">
+          <img src="./images/img-roadmap.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-now contact-bottom">
+      <h2> Cùng bé bắt đầu hành trình trở thành công dân toàn cầu ngay hôm nay!</h2>
+      <button class="btn btn-contact">LIÊN HỆ NGAY VỚI CHÚNG TÔI</button>
+    </div>
+
+    <!-- Guestbook -->
+    <div class="guest-book">
+      <div class="container">
+        <div class="guest-book-content">
+          <div class="content">
+            <img src="./images/logo-small-white.svg" alt="logo-small">
+            <h2>Lưu bút</h2>
+            <img src="./images/icon-sub-green.svg" alt="icon-sub-green">
+          </div>
+        </div>
+        <div class="guest-book-wrap">
+          <div class="guest-book-item">
+            <div class="item-content">
+              <img src="./images/guest-book.png" alt="guest-book">
+            </div>
+          </div>
+          <div class="guest-book-item">
+            <div class="item-content">
+              <img src="./images/guest-book1.png" alt="guest-book1">
+            </div>
+          </div>
+          <div class="guest-book-item">
+            <div class="item-content">
+              <img src="./images/guest-book2.png" alt="guest-book2">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- test  -->
+    <div class="test-proficiency">
+      <div class="container">
+        <h2 class="title text-center">Kiểm tra trình độ trực tuyến miễn phí <br /> với giáo viên nước ngoài cùng Opus
+          English!</h2>
+        <p class="text-center mb-4">Nhanh tay đăng ký cho bé, Bố mẹ ơi! </p>
+        <div class="row mb-1">
+          <div class="col-lg-3 col-md-6">
+            <div class="form-group">
+              <label>Họ và tên</label>
+              <input class="form-control" placeholder="Nhập họ và tên">
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="form-group">
+              <label>Năm sinh </label>
+              <select class="form-control">
+                <option>2000</option>
+                <option>2001</option>
+                <option>2002</option>
+                <option>2003</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="form-group">
+              <label>Điện thoại</label>
+              <input class="form-control" placeholder="0937 465 876">
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="form-group">
+              <label>Email</label>
+              <input class="form-control" placeholder="email@gmail.com">
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Địa chỉ nhà</label>
+              <input class="form-control" placeholder="Ngõ 1, Khâm Thiên, Đống Đa, Hà Nội">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <button class="btn btn-check">ĐĂNG KÝ KIỂM TRA</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="logo-footer"><img src="./images/logo-footer.svg" alt=""></div>
+        <div class="icons">
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <hr />
+        <div class="footer-content">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="title">Liên hệ</div>
+              <div>190 Khâm Thiên, Đống Đa, Hà Nội</div>
+              <div>Điện thoại: (+84 28) 1234 2587</div>
+              <div>Fax: (+84 28) 6587 1478</div>
+              <div>Email: support@OpusShool.com</div>
+              <div>Hotline: 1900 1880 (08h-23h)</div>
+            </div>
+            <div class="col-md-4">
+              <div class="title">Khóa học</div>
+              <a href="#">Tiếng Anh Adapted (3 – 7 tuổi)</a>
+              <a href="#">Tiếng Anh Smart (6 – 9 tuổi)</a>
+              <a href="#">Tiếng Anh Advanced Active (9 – 15 tuổi)</a>
+            </div>
+            <div class="col-md-4">
+              <div class="title">Đăng ký nhận tin</div>
+              <div class="input-mail">
+                <img src="./images/icon-gmail-gray.svg" alt="">
+                <span></span>
+                <input type="text" class="form-control" placeholder="Nhập email đăng ký">
+              </div>
+              <button class="btn btn-confirm">Xác nhận</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-coppyright text-center">
+        Bản quyền của <span>Opus English</span> ® 2019. Bảo lưu mọi quyền
+      </div>
+    </div>
+  </footer>
+
+  <!--Declaration js-->
+  <script src="js/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous">
+  </script>
+
+  <script src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
