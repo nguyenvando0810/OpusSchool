@@ -85,31 +85,24 @@
   }
 
   @media only screen and (max-width: 767px) {
-    .overview {
-      margin-top: 30px;
+    margin-top: 30px;
 
-      .tab-overview {
-        height: auto;
-        display: block;
+    .tab-overview {
+      height: auto;
+      display: block;
 
-        .nav-link {
-          margin-left: 0;
-          padding: 15px 20px;
-          margin-right: 40px;
+      .nav-link {
+        margin-left: 0;
+        padding: 15px 20px;
+        margin-right: 40px;
 
-          &.active {
-            &::after {
-              content: '';
-              height: 5px;
-              width: 100%;
-              bottom: 0;
-            }
+        &.active {
+          &::after {
+            content: '';
+            height: 5px;
+            width: 100%;
+            bottom: 0;
           }
-        }
-
-        .tab-overview,
-        .tab-content {
-          margin-bottom: 30px !important;
         }
       }
 
@@ -117,13 +110,19 @@
       .tab-content {
         margin-bottom: 30px !important;
       }
+    }
 
-      .tab-pane {
-        padding: 0;
+    .tab-overview,
+    .tab-content {
+      margin-bottom: 30px !important;
+    }
 
-        .overview-image {
-          height: 225px;
-        }
+    .tab-pane {
+      padding: 0;
+
+      .overview-image {
+        height: 225px;
+        margin-top: 15px;
       }
     }
   }

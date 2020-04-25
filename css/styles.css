@@ -10774,24 +10774,6 @@ body {
       .news-media .media-content .aciton-img {
         margin-top: 10px; } }
 
-.breadcrumb-category {
-  background-color: #F9F9F9; }
-  .breadcrumb-category .breadcrumb {
-    background-color: transparent;
-    padding: 20px 0;
-    margin-bottom: 0; }
-  .breadcrumb-category .breadcrumb-item a {
-    color: #333333;
-    font-weight: bold; }
-  .breadcrumb-category .breadcrumb-item.active a {
-    color: #757575;
-    font-weight: normal; }
-  .breadcrumb-category .breadcrumb-item + .breadcrumb-item {
-    padding-left: 10px; }
-    .breadcrumb-category .breadcrumb-item + .breadcrumb-item::before {
-      color: #4F4F4F;
-      padding-right: 10px; }
-
 .category-contents {
   padding: 25px 0 50px; }
   .category-contents .title {
@@ -10981,85 +10963,6 @@ body {
           margin-right: 10px; }
         .category-contents .list-news .list-group-item .item-content .item-description {
           margin: 10px 0; } }
-
-.pagination-news {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #3A3A3A;
-  font-size: 13px; }
-  .pagination-news .select-page {
-    display: flex;
-    align-items: center; }
-    .pagination-news .select-page span {
-      margin-right: 10px; }
-    .pagination-news .select-page select {
-      height: 35px !important;
-      width: 55px;
-      color: #3A3A3A;
-      font-size: 13px;
-      padding-left: 10px;
-      padding-right: 10px;
-      -moz-appearance: none;
-      border: 1px solid #ECECEC;
-      background-image: url("../images/icon-caret-down.png");
-      background-repeat: no-repeat;
-      background-size: 8px;
-      background-position: 85% 50%;
-      border-radius: 5px;
-      /* Firefox */
-      -webkit-appearance: none;
-      /* Safari and Chrome */
-      appearance: none;
-      cursor: pointer; }
-      .pagination-news .select-page select:focus {
-        box-shadow: none; }
-  .pagination-news .pagination {
-    margin-bottom: 0; }
-    .pagination-news .pagination .page-item {
-      border-radius: 5px;
-      margin-right: 5px; }
-      .pagination-news .pagination .page-item:last-child {
-        margin-right: 0; }
-      .pagination-news .pagination .page-item.active .page-link {
-        color: #EA7F27; }
-      .pagination-news .pagination .page-item .page-link {
-        border-radius: 5px;
-        padding: 8px 13px;
-        border: 1px solid #ECECEC;
-        color: #3A3A3A;
-        background-color: transparent;
-        transition: 0.3s;
-        min-width: 34px;
-        min-height: 34px; }
-        .pagination-news .pagination .page-item .page-link:hover, .pagination-news .pagination .page-item .page-link:focus {
-          color: #EA7F27;
-          box-shadow: none; }
-          .pagination-news .pagination .page-item .page-link:hover .fa, .pagination-news .pagination .page-item .page-link:focus .fa {
-            color: #EA7F27; }
-        .pagination-news .pagination .page-item .page-link .fa {
-          color: #000000;
-          font-size: 15px;
-          top: -0.5px;
-          position: relative; }
-
-.breadcrumb-category {
-  background-color: #F9F9F9; }
-  .breadcrumb-category .breadcrumb {
-    background-color: transparent;
-    padding: 20px 0;
-    margin-bottom: 0; }
-  .breadcrumb-category .breadcrumb-item a {
-    color: #333333;
-    font-weight: bold; }
-  .breadcrumb-category .breadcrumb-item.active a {
-    color: #757575;
-    font-weight: normal; }
-  .breadcrumb-category .breadcrumb-item + .breadcrumb-item {
-    padding-left: 10px; }
-    .breadcrumb-category .breadcrumb-item + .breadcrumb-item::before {
-      color: #4F4F4F;
-      padding-right: 10px; }
 
 .news .category {
   padding-right: 0;
@@ -11325,9 +11228,9 @@ body {
       margin-right: 20px;
       margin-bottom: 10px; }
     .courses .course-form .group-input .name {
-      max-width: 180px; }
+      width: 180px; }
     .courses .course-form .group-input .phone {
-      max-width: 140px; }
+      width: 140px; }
     .courses .course-form .group-input .adress {
       min-width: 300px; }
     .courses .course-form .group-input .btn-search {
@@ -11425,14 +11328,6 @@ body {
   padding: 70px 0;
   margin-top: 80px;
   margin-bottom: 80px; }
-  .courses .course-level .level-wrap {
-    width: 300px;
-    margin: 0 auto; }
-  .courses .course-level .level {
-    font-weight: bold;
-    font-size: 18px;
-    color: #EA7F27;
-    margin-bottom: 60px; }
 .courses .contact-now {
   text-align: center;
   background-color: #79B643;
@@ -11486,6 +11381,8 @@ body {
 @media only screen and (max-width: 1199px) {
   .courses .course-form .group-input {
     flex-wrap: wrap; }
+  .courses .overview-wrap .tab-overview .nav-link {
+    margin-left: 30px; }
   .courses .slide-image img {
     width: 100%;
     height: 100%; } }
@@ -11497,7 +11394,144 @@ body {
       margin-top: 0; }
     .courses .roadmap .roadmap-img img {
       width: 100%;
-      height: auto; } }
+      height: auto; }
+  .courses .overview .tab-overview {
+    height: auto; }
+  .courses .overview-wrap {
+    padding-bottom: 30px; }
+  .courses .course-level-header {
+    margin-top: 50px; }
+  .courses .course-level {
+    margin-top: 30px;
+    margin-bottom: 50px; } }
+@media only screen and (max-width: 767px) {
+  .courses .overview-wrap .tab-overview .nav-link {
+    margin-left: 0; }
+  .courses .course-form .group-input {
+    display: block; }
+    .courses .course-form .group-input label {
+      margin-bottom: 5px; }
+    .courses .course-form .group-input .form,
+    .courses .course-form .group-input .name,
+    .courses .course-form .group-input .year,
+    .courses .course-form .group-input .phone,
+    .courses .course-form .group-input .student,
+    .courses .course-form .group-input .adress {
+      margin-right: 0;
+      width: 100%; }
+    .courses .course-form .group-input .form select,
+    .courses .course-form .group-input .year select {
+      width: 100%;
+      background-position: 95% 52%; }
+    .courses .course-form .group-input .btn-search {
+      margin-top: 0; }
+  .courses .courses-banner .courses-item .item-content .title {
+    font-size: 28px; }
+  .courses .courses-banner .courses-item .item-content .bg-bottom {
+    width: 320px; }
+  .courses .courses-banner .courses-item .item-content .sub-title {
+    font-size: 18px;
+    padding: 0 20px; }
+  .courses .course-level {
+    height: 315px; }
+  .courses .contact-now {
+    background-position: initial;
+    background-size: cover; }
+    .courses .contact-now h2 {
+      font-size: 22px; } }
+
+.check .btn-search {
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 18px; }
+.check .check-result {
+  padding: 50px 0; }
+  .check .check-result .contents-wrap {
+    width: 575px;
+    margin: 0 auto;
+    display: flex; }
+    .check .check-result .contents-wrap .contents {
+      padding-left: 65px;
+      padding-top: 10px; }
+      .check .check-result .contents-wrap .contents .name {
+        font-size: 16px;
+        color: #333333;
+        margin-bottom: 10px; }
+      .check .check-result .contents-wrap .contents .descriptions {
+        font-size: 15px;
+        color: #4F4F4F;
+        margin-bottom: 25px; }
+    .check .check-result .contents-wrap .btn-check {
+      background-color: #EA7F27;
+      padding: 10px 24px;
+      border-radius: 6px;
+      font-size: 18px; }
+@media only screen and (max-width: 767px) {
+  .check .check-result .contents-wrap {
+    width: 100%;
+    display: block;
+    padding: 0 15px;
+    text-align: center; }
+    .check .check-result .contents-wrap .contents {
+      padding-left: 0; } }
+
+.contact-content {
+  padding: 50px 0; }
+  .contact-content .contact-wrapper {
+    display: flex; }
+    .contact-content .contact-wrapper .map {
+      width: calc(100% - 300px);
+      padding-right: 30px; }
+      .contact-content .contact-wrapper .map img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover; }
+    .contact-content .contact-wrapper .time-work {
+      width: 300px;
+      font-family: 'Roboto Condensed', sans-serif; }
+      .contact-content .contact-wrapper .time-work h3 {
+        font-size: 16px;
+        font-weight: bold;
+        color: #3A3A3A;
+        margin-bottom: 15px; }
+      .contact-content .contact-wrapper .time-work .time-work-wrap {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between; }
+        .contact-content .contact-wrapper .time-work .time-work-wrap .day {
+          font-weight: bold;
+          font-size: 13px;
+          color: #3A3A3A;
+          font-family: 'Roboto', sans-serif; }
+        .contact-content .contact-wrapper .time-work .time-work-wrap .hours {
+          font-size: 13px;
+          color: #3A3A3A;
+          font-family: 'Roboto', sans-serif; }
+  .contact-content .contact-adress {
+    margin-top: 25px; }
+    .contact-content .contact-adress .title {
+      font-weight: bold;
+      font-size: 16px;
+      color: #3A3A3A;
+      margin-bottom: 20px; }
+    .contact-content .contact-adress .adress {
+      margin-bottom: 10px;
+      font-weight: normal;
+      font-size: 14px;
+      color: #3A3A3A; }
+      .contact-content .contact-adress .adress img {
+        margin-right: 22px; }
+      .contact-content .contact-adress .adress span {
+        color: #c7c7c7; }
+  @media only screen and (max-width: 991px) {
+    .contact-content .contact-wrapper {
+      display: block; }
+      .contact-content .contact-wrapper .map {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 15px; }
+      .contact-content .contact-wrapper .time-work {
+        width: 100%; } }
 
 .footer {
   background-color: #0B0127;
@@ -11580,6 +11614,7 @@ body {
     .footer .footer-coppyright span {
       color: #79B643; }
 
+/*Import Components*/
 .overview {
   margin-top: 55px; }
   .overview .tab-overview {
@@ -11636,30 +11671,31 @@ body {
         .overview .overview .tab-pane .overview-image {
           height: 225px; } }
   @media only screen and (max-width: 767px) {
-    .overview .overview {
+    .overview {
       margin-top: 30px; }
-      .overview .overview .tab-overview {
+      .overview .tab-overview {
         height: auto;
         display: block; }
-        .overview .overview .tab-overview .nav-link {
+        .overview .tab-overview .nav-link {
           margin-left: 0;
           padding: 15px 20px;
           margin-right: 40px; }
-          .overview .overview .tab-overview .nav-link.active::after {
+          .overview .tab-overview .nav-link.active::after {
             content: '';
             height: 5px;
             width: 100%;
             bottom: 0; }
-        .overview .overview .tab-overview .tab-overview,
-        .overview .overview .tab-overview .tab-content {
+        .overview .tab-overview .tab-overview,
+        .overview .tab-overview .tab-content {
           margin-bottom: 30px !important; }
-      .overview .overview .tab-overview,
-      .overview .overview .tab-content {
+      .overview .tab-overview,
+      .overview .tab-content {
         margin-bottom: 30px !important; }
-      .overview .overview .tab-pane {
+      .overview .tab-pane {
         padding: 0; }
-        .overview .overview .tab-pane .overview-image {
-          height: 225px; } }
+        .overview .tab-pane .overview-image {
+          height: 225px;
+          margin-top: 15px; } }
 
 .test-proficiency {
   height: 525px;
@@ -11880,6 +11916,87 @@ body {
   .banner-slide .slick-prev {
     left: 15px; }
   .banner-slide .slick-next {
-    right: 15px; } }
+    right: 15px; }
+  .banner-slide .slick-slide {
+    height: 350px !important; } }
+
+.breadcrumb-wrapper {
+  background-color: #F9F9F9; }
+  .breadcrumb-wrapper .breadcrumb {
+    background-color: transparent;
+    padding: 20px 0;
+    margin-bottom: 0; }
+  .breadcrumb-wrapper .breadcrumb-item a {
+    color: #333333;
+    font-weight: bold; }
+  .breadcrumb-wrapper .breadcrumb-item.active a {
+    color: #757575;
+    font-weight: normal; }
+  .breadcrumb-wrapper .breadcrumb-item + .breadcrumb-item {
+    padding-left: 10px; }
+    .breadcrumb-wrapper .breadcrumb-item + .breadcrumb-item::before {
+      color: #4F4F4F;
+      padding-right: 10px; }
+
+.pagination-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #3A3A3A;
+  font-size: 13px; }
+  .pagination-wrapper .select-page {
+    display: flex;
+    align-items: center; }
+    .pagination-wrapper .select-page span {
+      margin-right: 10px; }
+    .pagination-wrapper .select-page select {
+      height: 35px !important;
+      width: 55px;
+      color: #3A3A3A;
+      font-size: 13px;
+      padding-left: 10px;
+      padding-right: 10px;
+      -moz-appearance: none;
+      border: 1px solid #ECECEC;
+      background-image: url("../images/icon-caret-down.png");
+      background-repeat: no-repeat;
+      background-size: 8px;
+      background-position: 85% 50%;
+      border-radius: 5px;
+      /* Firefox */
+      -webkit-appearance: none;
+      /* Safari and Chrome */
+      appearance: none;
+      cursor: pointer; }
+      .pagination-wrapper .select-page select:focus {
+        box-shadow: none; }
+  .pagination-wrapper .pagination {
+    margin-bottom: 0; }
+    .pagination-wrapper .pagination .page-item {
+      border-radius: 5px;
+      margin-right: 5px; }
+      .pagination-wrapper .pagination .page-item:last-child {
+        margin-right: 0; }
+      .pagination-wrapper .pagination .page-item.active .page-link {
+        color: #EA7F27; }
+      .pagination-wrapper .pagination .page-item .page-link {
+        border-radius: 5px;
+        padding: 8px 13px;
+        border: 1px solid #ECECEC;
+        color: #3A3A3A;
+        background-color: transparent;
+        transition: 0.3s;
+        min-width: 34px;
+        min-height: 34px; }
+        .pagination-wrapper .pagination .page-item .page-link:hover, .pagination-wrapper .pagination .page-item .page-link:focus {
+          color: #EA7F27;
+          box-shadow: none; }
+          .pagination-wrapper .pagination .page-item .page-link:hover .fa, .pagination-wrapper .pagination .page-item .page-link:focus .fa {
+            color: #EA7F27; }
+        .pagination-wrapper .pagination .page-item .page-link .fa {
+          color: #000000;
+          font-size: 15px;
+          top: -0.5px;
+          position: relative; }
 
 /*# sourceMappingURL=styles.css.map */

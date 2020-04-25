@@ -1,0 +1,91 @@
+.contact-content {
+  padding: 50px 0;
+
+  .contact-wrapper {
+    display: flex;
+
+    .map {
+      width: calc(100% - 300px);
+      padding-right: 30px;
+
+      img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .time-work {
+      width: 300px;
+      font-family: 'Roboto Condensed', sans-serif;
+
+      h3 {
+        font-size: 16px;
+        font-weight: bold;
+        color: #3A3A3A;
+        margin-bottom: 15px;
+      }
+
+      .time-work-wrap {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        .day {
+          font-weight: bold;
+          font-size: 13px;
+          color: #3A3A3A;
+          font-family: 'Roboto', sans-serif;
+        }
+
+        .hours {
+          font-size: 13px;
+          color: #3A3A3A;
+          font-family: 'Roboto', sans-serif;
+        }
+      }
+    }
+  }
+
+  .contact-adress {
+    margin-top: 25px;
+
+    .title {
+      font-weight: bold;
+      font-size: 16px;
+      color: #3A3A3A;
+      margin-bottom: 20px;
+    }
+
+    .adress {
+      margin-bottom: 10px;
+      font-weight: normal;
+      font-size: 14px;
+      color: #3A3A3A;
+
+      img {
+        margin-right: 22px;
+      }
+
+      span {
+        color: #c7c7c7;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    .contact-wrapper {
+      display: block;
+
+      .map {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 15px;
+      }
+
+      .time-work {
+        width: 100%;
+      }
+    }
+  }
+}

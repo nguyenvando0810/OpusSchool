@@ -8,3 +8,12 @@
 
   /* Import page.*/
   @import "page/page";
+
+  /*Import Components*/
+
+@import 'component/tab';
+@import 'component/test-proficiency';
+@import 'component/guest-book';
+@import 'component/banner';
+@import 'component/breadcrumb';
+@import 'component/pagination';

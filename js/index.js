@@ -30,7 +30,15 @@ $(document).ready(function () {
 		speed: 300,
 		slidesToShow: 6,
 		slidesToScroll: 6,
-		arrows: true
+		arrows: true,
+
+		responsive: [{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3
+			}
+		}]
 	});
 
 	// Slide guest book
