@@ -11005,32 +11005,6 @@ body {
     margin-top: 20px;
     font-size: 14px;
     color: #3A3A3A; }
-.news .media {
-  background-color: #F9F9F9;
-  padding: 50px 0;
-  text-align: center; }
-  .news .media .title {
-    font-family: "Merriweather";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    margin-bottom: 0;
-    color: #333333; }
-  .news .media .tab-media {
-    font-weight: 600;
-    font-size: 15px;
-    justify-content: center;
-    margin-top: 40px; }
-    .news .media .tab-media .nav-link {
-      color: #757575;
-      padding: 2px 0;
-      margin-right: 15px;
-      margin-left: 15px; }
-      .news .media .tab-media .nav-link.active {
-        background: transparent;
-        color: #EA7F27;
-        border-radius: 0;
-        border-bottom: 1px solid #EA7F27; }
 @media only screen and (max-width: 991px) and (min-width: 768px) {
   .news .news-contents {
     padding-right: 0;
@@ -11236,8 +11210,11 @@ body {
     .courses .course-form .group-input .btn-search {
       padding: 12px 18px;
       margin-top: 18px; }
+      .courses .course-form .group-input .btn-search .search-mobile {
+        display: none; }
     .courses .course-form .group-input .form select {
-      width: 148px; }
+      width: 148px;
+      background-position: 90% 50%; }
     .courses .course-form .group-input label {
       font-weight: 600;
       color: #FFFFFF; }
@@ -11408,7 +11385,8 @@ body {
   .courses .overview-wrap .tab-overview .nav-link {
     margin-left: 0; }
   .courses .course-form .group-input {
-    display: block; }
+    display: block;
+    padding: 10px 0; }
     .courses .course-form .group-input label {
       margin-bottom: 5px; }
     .courses .course-form .group-input .form,
@@ -11423,8 +11401,21 @@ body {
     .courses .course-form .group-input .year select {
       width: 100%;
       background-position: 95% 52%; }
+    .courses .course-form .group-input .student.disable-number {
+      cursor: not-allowed; }
+      .courses .course-form .group-input .student.disable-number .number,
+      .courses .course-form .group-input .student.disable-number .minus,
+      .courses .course-form .group-input .student.disable-number .form-control,
+      .courses .course-form .group-input .student.disable-number .plus {
+        pointer-events: none;
+        background-color: #f5f5f5; }
     .courses .course-form .group-input .btn-search {
-      margin-top: 0; }
+      margin-top: 10px;
+      width: 100%; }
+      .courses .course-form .group-input .btn-search img {
+        display: none; }
+      .courses .course-form .group-input .btn-search .search-mobile {
+        display: inline-block; }
   .courses .courses-banner .courses-item .item-content .title {
     font-size: 28px; }
   .courses .courses-banner .courses-item .item-content .bg-bottom {
@@ -11532,6 +11523,74 @@ body {
         margin-bottom: 15px; }
       .contact-content .contact-wrapper .time-work {
         width: 100%; } }
+
+.search-result .condition-search-wrap {
+  padding: 15px 30px 5px;
+  box-shadow: 0px 2px 3px #ECECEC, inset 0px 1px 0px #ECECEC; }
+.search-result .condition-search {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  margin: 0 auto; }
+  .search-result .condition-search .title {
+    font-weight: bold;
+    font-size: 16px;
+    color: #757575;
+    margin-right: 30px; }
+  .search-result .condition-search .condition-item {
+    background: #F2F2F2;
+    border-radius: 6px;
+    padding: 7px 15px;
+    margin-right: 10px;
+    margin-bottom: 10px; }
+    .search-result .condition-search .condition-item label {
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 170%;
+      color: #757575;
+      margin-bottom: 0; }
+    .search-result .condition-search .condition-item .value {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      color: #333333; }
+  .search-result .condition-search .btn-search {
+    color: #EA7F27;
+    border: 2px solid #EA7F27;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    padding: 10px 13px;
+    width: 115px;
+    display: flex;
+    align-items: center; }
+    .search-result .condition-search .btn-search img {
+      margin-right: 5px; }
+.search-result .result-map-search {
+  max-width: 1500px;
+  margin: 0 auto; }
+  .search-result .result-map-search .result-search {
+    padding-top: 30px;
+    width: 40%;
+    max-width: 600px; }
+    .search-result .result-map-search .result-search .total-result {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 160%;
+      color: #4F4F4F;
+      margin-bottom: 25px; }
+    .search-result .result-map-search .result-search .result-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: inset 0px -1px 0px #ECECEC; }
+      .search-result .result-map-search .result-search .result-item .item-adress {
+        font-weight: 600;
+        font-size: 14px;
+        color: #333333;
+        margin-bottom: 8px; }
+        .search-result .result-map-search .result-search .result-item .item-adress span {
+          color: #8b8b8b; }
 
 .footer {
   background-color: #0B0127;
@@ -11998,5 +12057,41 @@ body {
           font-size: 15px;
           top: -0.5px;
           position: relative; }
+
+.media-wrapper {
+  background-color: #F9F9F9;
+  padding: 50px 0;
+  text-align: center; }
+  .media-wrapper .title {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 0;
+    color: #333333; }
+  .media-wrapper .tab-media {
+    font-weight: 600;
+    font-size: 15px;
+    justify-content: center;
+    margin-top: 40px; }
+    .media-wrapper .tab-media .nav-link {
+      color: #757575;
+      padding: 2px 0;
+      margin-right: 15px;
+      margin-left: 15px; }
+      .media-wrapper .tab-media .nav-link.active {
+        background: transparent;
+        color: #EA7F27;
+        border-radius: 0;
+        border-bottom: 1px solid #EA7F27; }
+  .media-wrapper .images-slide {
+    /* the parent */ }
+    .media-wrapper .images-slide .slick-slide {
+      margin: 0 10px; }
+      .media-wrapper .images-slide .slick-slide img {
+        width: 100%;
+        height: 350px; }
+    .media-wrapper .images-slide .slick-list {
+      margin: 0 -10px; }
 
 /*# sourceMappingURL=styles.css.map */

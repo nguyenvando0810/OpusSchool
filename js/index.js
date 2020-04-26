@@ -49,6 +49,23 @@ $(document).ready(function () {
 		arrows: true,
 		dots: true
 	});
+
+	let optionValue = document.getElementById("form-select").value;
+	let inputStudentSource = document.getElementById('student-course');
+
+	if (optionValue === '1') {
+		inputStudentSource.classList.add('disable-number');
+		document.getElementById('numberStudent').value = 1;
+	}
+
+	$('#form-select').on('change', function () {
+		if (this.value === 'group') {
+			inputStudentSource.classList.remove("disable-number");
+		} else {
+			inputStudentSource.classList.add('disable-number');
+			document.getElementById('numberStudent').value = 1;
+		}
+	})
 });
 
 // Gallery
@@ -119,6 +136,7 @@ function showSlidesVideo(n) {
 	dots[slideIndexVideo - 1].className += " active";
 	// captionText.innerHTML = dots[slideIndexVideo - 1].alt;
 }
+
 let inputStudent = document.getElementById("student");
 
 if (document.getElementById('id1').checked) {

@@ -85,10 +85,15 @@
       .btn-search {
         padding: 12px 18px;
         margin-top: 18px;
+
+        .search-mobile {
+          display: none;
+        }
       }
 
       .form select {
         width: 148px;
+        background-position: 90% 50%;
       }
 
       label {
@@ -356,6 +361,7 @@
 
     .course-form .group-input {
       display: block;
+      padding: 10px 0;
 
       label {
         margin-bottom: 5px;
@@ -377,8 +383,31 @@
         background-position: 95% 52%;
       }
 
+      .student {
+        &.disable-number {
+          cursor: not-allowed;
+
+          .number,
+          .minus,
+          .form-control,
+          .plus {
+            pointer-events: none;
+            background-color: #f5f5f5;
+          }
+        }
+      }
+
       .btn-search {
-        margin-top: 0;
+        margin-top: 10px;
+        width: 100%;
+
+        img {
+          display: none;
+        }
+
+        .search-mobile {
+          display: inline-block;
+        }
       }
     }
 

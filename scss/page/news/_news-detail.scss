@@ -58,42 +58,6 @@
     }
   }
 
-  .media {
-    background-color: #F9F9F9;
-    padding: 50px 0;
-    text-align: center;
-
-    .title {
-      font-family: "Merriweather";
-      font-style: normal;
-      font-weight: bold;
-      font-size: 26px;
-      margin-bottom: 0;
-      color: #333333;
-    }
-
-    .tab-media {
-      font-weight: 600;
-      font-size: 15px;
-      justify-content: center;
-      margin-top: 40px;
-
-      .nav-link {
-        color: #757575;
-        padding: 2px 0;
-        margin-right: 15px;
-        margin-left: 15px;
-
-        &.active {
-          background: transparent;
-          color: $color-secondary;
-          border-radius: 0;
-          border-bottom: 1px solid $color-secondary;
-        }
-      }
-    }
-  }
-
   @media only screen and (max-width: 991px) and (min-width: 768px) {
     .news-contents {
       padding-right: 0;

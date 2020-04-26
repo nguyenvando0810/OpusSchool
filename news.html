@@ -116,7 +116,7 @@
 	</header>
 
 	<!-- Breadcrumb -->
-	<nav aria-label="breadcrumb" class="breadcrumb-category">
+	<nav aria-label="breadcrumb" class="breadcrumb-wrapper">
 		<div class="container">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
@@ -322,7 +322,7 @@
 			</div>
 		</div>
 
-		<div class="media">
+		<div class="media-wrapper">
 			<div class="container">
 				<h3 class="title">Phòng truyền thông</h3>
 				<img src="./images/icon-sub-orange.svg" alt="">
@@ -339,7 +339,17 @@
 
 				<div class="tab-content" id="pills-tabContent">
 					<div class="tab-pane fade show active" id="pills-image" role="tabpanel" aria-labelledby="pills-image-tab">
-						Image
+						<div class="images-slide banner-slide">
+							<div class="images-item">
+								<img src="./images/image-intro-company.png" alt="banner">
+							</div>
+							<div class="images-item">
+								<img src="./images/image-intro-company.png" alt="banner">
+							</div>
+							<div class="images-item">
+								<img src="./images/image-intro-company.png" alt="banner">
+							</div>
+						</div>
 					</div>
 					<div class="tab-pane fade" id="pills-video" role="tabpanel" aria-labelledby="pills-video-tab">
 						Video
@@ -408,7 +418,7 @@
 
 	<script src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-	<!-- <script src="js/index.js"></script> -->
+	<script src="js/slide-media.js"></script>
 </body>
 
 </html>
