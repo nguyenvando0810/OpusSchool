@@ -1,6 +1,6 @@
 .media-wrapper {
   background-color: #F9F9F9;
-  padding: 50px 0;
+  padding: 80px 0 100px;
   text-align: center;
 
   .title {
@@ -35,7 +35,7 @@
 
   .images-slide {
     .slick-slide {
-      margin: 0 10px;
+      margin: 0 5px;
 
       img {
         width: 100%;
@@ -45,7 +45,134 @@
 
     /* the parent */
     .slick-list {
-      margin: 0 -10px;
+      margin: 0 -5px;
+    }
+
+    .slick-prev,
+    .slick-next {
+      top: initial;
+      bottom: -40px;
+      transform: initial;
+
+      &::before {
+        font-family: "FontAwesome";
+        font-weight: 900;
+        font-size: 20px;
+        color: #757575;
+      }
+    }
+
+    .slick-prev {
+      left: calc(50% - 25px);
+
+      &::before {
+        content: "\f104";
+      }
+    }
+
+    .slick-next {
+      right: calc(50% - 25px);
+
+      &::before {
+        content: "\f105";
+      }
+    }
+  }
+
+  .images-item {
+    &:focus {
+      outline: none;
+    }
+
+    .slick-list {
+      padding: 0 !important;
+    }
+
+    .item-img-detail {
+      img {
+        height: 360px;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .descriptions {
+        font-weight: 600;
+        font-size: 15px;
+        color: $color-white;
+        padding: 25px 20px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: left;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+      }
+    }
+
+    .slider-nav,
+    .slider-nav1,
+    .slider-nav2 {
+      margin-top: 10px;
+    }
+
+    .item-img-thumnail {
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+
+      img {
+        width: 105px;
+        height: 70px;
+
+        &:hover {
+          border: 3px solid #EA7F27;
+        }
+      }
+
+      &.slick-current {
+        img {
+          border: 3px solid #EA7F27;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 991px) and (min-width: 768px) {
+    .images-item {
+      .item-img-detail {
+        img {
+          height: 250px;
+        }
+      }
+
+      .item-img-thumnail {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .images-item {
+      .item-img-detail {
+        height: 100% !important;
+
+        img {
+          height: 265px;
+        }
+      }
+
+      .item-img-thumnail {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .banner-slide .slick-slide {
+      height: 100% !important;
     }
   }
 }
