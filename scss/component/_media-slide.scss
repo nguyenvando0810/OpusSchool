@@ -3,6 +3,27 @@
   padding: 80px 0 100px;
   text-align: center;
 
+  .tab-content>.tab-pane {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .tab-content>.active {
+    height: auto;
+    overflow: initial;
+    visibility: initial;
+    opacity: 1;
+  }
+
+  .tab-content>.show {
+    height: auto;
+    overflow: initial;
+    visibility: initial;
+  }
+
   .title {
     font-family: "Merriweather";
     font-style: normal;
@@ -102,6 +123,7 @@
         padding: 25px 20px;
         position: absolute;
         bottom: 0;
+        z-index: 0;
         width: 100%;
         text-align: left;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
@@ -110,7 +132,12 @@
 
     .slider-nav,
     .slider-nav1,
-    .slider-nav2 {
+    .slider-nav2,
+    .slider-nav3,
+    .slider-nav4,
+    .slider-nav5,
+    .slider-nav6,
+    .slider-nav7 {
       margin-top: 10px;
     }
 
