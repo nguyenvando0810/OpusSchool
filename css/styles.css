@@ -11635,13 +11635,166 @@ body {
       width: 100%;
       height: 730px;
       object-fit: cover; }
+.search-result .modal-enrollment {
+  padding-right: 0 !important; }
+  .search-result .modal-enrollment .modal-dialog {
+    max-width: 485px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 30px;
+    transform: translate(0, 8px); }
+    .search-result .modal-enrollment .modal-dialog .modal-content {
+      border: none; }
+      .search-result .modal-enrollment .modal-dialog .modal-content .modal-header {
+        padding: 0;
+        display: block;
+        text-align: right;
+        border-bottom: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .search-result .modal-enrollment .modal-dialog .modal-content .modal-header h3 {
+          font-weight: bold;
+          font-size: 26px;
+          margin-bottom: 0; }
+        .search-result .modal-enrollment .modal-dialog .modal-content .modal-header img {
+          cursor: pointer; }
+    .search-result .modal-enrollment .modal-dialog .modal-body {
+      padding: 0; }
+    .search-result .modal-enrollment .modal-dialog .form-search {
+      height: auto;
+      background-color: #FFFFFF;
+      margin-top: 30px; }
+      .search-result .modal-enrollment .modal-dialog .form-search .registration {
+        display: flex;
+        align-items: center;
+        margin-top: 10px; }
+        .search-result .modal-enrollment .modal-dialog .form-search .registration [type="radio"]:checked,
+        .search-result .modal-enrollment .modal-dialog .form-search .registration [type="radio"]:not(:checked) {
+          position: absolute;
+          left: -9999px; }
+        .search-result .modal-enrollment .modal-dialog .form-search .registration [type="radio"]:checked + label,
+        .search-result .modal-enrollment .modal-dialog .form-search .registration [type="radio"]:not(:checked) + label {
+          position: relative;
+          padding-left: 35px;
+          cursor: pointer;
+          line-height: 21px;
+          display: inline-block;
+          font-size: 14px;
+          color: #333333;
+          font-weight: normal; }
+        .search-result .modal-enrollment .modal-dialog .form-search .registration [type="radio"]:checked + label:before,
+        .search-result .modal-enrollment .modal-dialog .form-search .registration [type="radio"]:not(:checked) + label:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 24px;
+          height: 24px;
+          border: 2px solid #BFBFBF;
+          border-radius: 100%;
+          background: #FFFFFF; }
+        .search-result .modal-enrollment .modal-dialog .form-search .registration [type="radio"]:checked + label:before {
+          border: 2px solid #EA7F27; }
+        .search-result .modal-enrollment .modal-dialog .form-search .registration [type="radio"]:checked + label:after,
+        .search-result .modal-enrollment .modal-dialog .form-search .registration [type="radio"]:not(:checked) + label:after {
+          content: '';
+          width: 12.8px;
+          height: 12.8px;
+          background: #EA7F27;
+          position: absolute;
+          top: 5.5px;
+          left: 6px;
+          border-radius: 100%;
+          -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease; }
+        .search-result .modal-enrollment .modal-dialog .form-search .registration [type="radio"]:not(:checked) + label:after {
+          opacity: 0;
+          -webkit-transform: scale(0);
+          transform: scale(0); }
+        .search-result .modal-enrollment .modal-dialog .form-search .registration [type="radio"]:checked + label:after {
+          opacity: 1;
+          -webkit-transform: scale(1);
+          transform: scale(1); }
+      .search-result .modal-enrollment .modal-dialog .form-search .group-input {
+        display: flex; }
+        .search-result .modal-enrollment .modal-dialog .form-search .group-input .year {
+          width: 100px; }
+          .search-result .modal-enrollment .modal-dialog .form-search .group-input .year select {
+            height: 46px;
+            font-size: 14px;
+            padding-left: 10px;
+            padding-right: 10px;
+            -moz-appearance: none;
+            background-image: url("../images/icon-caret-down.png");
+            background-repeat: no-repeat;
+            background-size: 10px;
+            background-position: 85% 50%;
+            /* Firefox */
+            -webkit-appearance: none;
+            /* Safari and Chrome */
+            appearance: none; }
+        .search-result .modal-enrollment .modal-dialog .form-search .group-input .phone {
+          width: 45%; }
+        .search-result .modal-enrollment .modal-dialog .form-search .group-input .student {
+          width: calc(55% - 100px);
+          padding: 0 20px; }
+          .search-result .modal-enrollment .modal-dialog .form-search .group-input .student.disable-number {
+            cursor: not-allowed; }
+            .search-result .modal-enrollment .modal-dialog .form-search .group-input .student.disable-number .number,
+            .search-result .modal-enrollment .modal-dialog .form-search .group-input .student.disable-number .minus,
+            .search-result .modal-enrollment .modal-dialog .form-search .group-input .student.disable-number .form-control,
+            .search-result .modal-enrollment .modal-dialog .form-search .group-input .student.disable-number .plus {
+              pointer-events: none;
+              background-color: #F2F2F2; }
+        .search-result .modal-enrollment .modal-dialog .form-search .group-input .number {
+          display: flex;
+          align-items: center;
+          border: 1px solid #BFBFBF;
+          border-radius: 6px;
+          padding: 1px 15px; }
+          .search-result .modal-enrollment .modal-dialog .form-search .group-input .number .minus,
+          .search-result .modal-enrollment .modal-dialog .form-search .group-input .number .plus {
+            cursor: pointer;
+            font-weight: 900;
+            font-size: 14px;
+            color: #4F4F4F; }
+          .search-result .modal-enrollment .modal-dialog .form-search .group-input .number .form-control {
+            border: none;
+            text-align: center;
+            color: #333333;
+            padding: 10px 0; }
+            .search-result .modal-enrollment .modal-dialog .form-search .group-input .number .form-control:focus {
+              outline: none;
+              box-shadow: none; }
+      .search-result .modal-enrollment .modal-dialog .form-search .btn-search {
+        font-weight: bold;
+        background-color: #EA7F27;
+        padding: 10px 25px;
+        font-size: 18px;
+        margin-top: 15px; }
+      .search-result .modal-enrollment .modal-dialog .form-search label {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #4F4F4F; }
+      .search-result .modal-enrollment .modal-dialog .form-search .form-control {
+        border: 1px solid #BFBFBF;
+        border-radius: 6px;
+        padding: 11.5px 15px;
+        font-size: 14px; }
+        .search-result .modal-enrollment .modal-dialog .form-search .form-control::placeholder {
+          color: #BFBFBF; }
+      .search-result .modal-enrollment .modal-dialog .form-search .form-control:disabled {
+        background: #F2F2F2; }
 .search-result .modal-search {
   padding-right: 0 !important; }
   .search-result .modal-search .modal-dialog {
     max-width: 100%;
     background: #FFFFFF;
     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
-    transform: translate(0, 70%); }
+    transform: translate(0, 82%); }
     .search-result .modal-search .modal-dialog .modal-content {
       border-radius: 0;
       padding: 30px; }
@@ -11653,12 +11806,16 @@ body {
         .search-result .modal-search .modal-dialog .modal-content .modal-header img {
           cursor: pointer; }
       .search-result .modal-search .modal-dialog .modal-content .modal-body {
-        padding: 0; }
+        padding: 0;
+        width: auto;
+        margin: 0 auto; }
         .search-result .modal-search .modal-dialog .modal-content .modal-body .form-search {
           display: flex;
           flex-wrap: wrap; }
           .search-result .modal-search .modal-dialog .modal-content .modal-body .form-search .form-search-item {
-            margin-left: 10px; }
+            margin-right: 10px; }
+            .search-result .modal-search .modal-dialog .modal-content .modal-body .form-search .form-search-item:last-child {
+              margin-right: 0; }
           .search-result .modal-search .modal-dialog .modal-content .modal-body .form-search .form {
             margin-right: 50px; }
           .search-result .modal-search .modal-dialog .modal-content .modal-body .form-search label {
@@ -11816,11 +11973,20 @@ body {
       border-radius: 6px;
       padding: 10px 25px;
       font-size: 18px; }
+@media only screen and (max-width: 1440px) {
+  .search-result .modal-search .modal-dialog .modal-content .modal-body .form-search .adress {
+    min-width: 300px; }
+  .search-result .modal-search .modal-dialog .modal-content .modal-body .form-search .form {
+    margin-right: 30px; }
+  .search-result .modal-search .modal-dialog .modal-content .modal-body .form-search .phone {
+    max-width: 200px; } }
 @media only screen and (max-width: 1280px) {
   .search-result .condition-search-wrap {
     padding: 15px 30px 5px; }
   .search-result .condition-search .condition-item {
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+  .search-result .modal-search .modal-dialog .modal-content .modal-body .form-search .phone {
+    max-width: initial; } }
 @media only screen and (max-width: 1199px) {
   .search-result .container {
     max-width: 1140px !important; } }
@@ -11856,11 +12022,13 @@ body {
     height: 300px; }
   .search-result .modal-search .modal-dialog {
     transform: translate(0, 20px); }
+    .search-result .modal-search .modal-dialog .modal-content .modal-body {
+      margin: 0; }
     .search-result .modal-search .modal-dialog .modal-content .modal-body .form-search {
       display: block; }
       .search-result .modal-search .modal-dialog .modal-content .modal-body .form-search .form-search-item {
         margin-bottom: 10px;
-        margin-left: 0;
+        margin-right: 0;
         width: 100%; }
         .search-result .modal-search .modal-dialog .modal-content .modal-body .form-search .form-search-item.form div {
           margin-right: 10px !important; }
@@ -11869,7 +12037,33 @@ body {
         .search-result .modal-search .modal-dialog .modal-content .modal-body .form-search .form-search-item .number {
           width: 100%; }
         .search-result .modal-search .modal-dialog .modal-content .modal-body .form-search .form-search-item.adress {
-          min-width: 100%; } }
+          min-width: 100%; }
+  .search-result .modal-enrollment .modal-dialog {
+    max-width: 100%; }
+    .search-result .modal-enrollment .modal-dialog .form-search .registration {
+      display: block; }
+      .search-result .modal-enrollment .modal-dialog .form-search .registration div {
+        margin-bottom: 5px; }
+      .search-result .modal-enrollment .modal-dialog .form-search .registration [type="radio"]:checked + label:after,
+      .search-result .modal-enrollment .modal-dialog .form-search .registration [type="radio"]:not(:checked) + label:after {
+        left: 5.8px; }
+    .search-result .modal-enrollment .modal-dialog .form-search .group-input {
+      display: block; }
+      .search-result .modal-enrollment .modal-dialog .form-search .group-input .year,
+      .search-result .modal-enrollment .modal-dialog .form-search .group-input .phone,
+      .search-result .modal-enrollment .modal-dialog .form-search .group-input .student,
+      .search-result .modal-enrollment .modal-dialog .form-search .group-input .btn-search {
+        width: 100%; }
+      .search-result .modal-enrollment .modal-dialog .form-search .group-input .year select {
+        background-position: 95% 50%; }
+      .search-result .modal-enrollment .modal-dialog .form-search .group-input .phone {
+        padding: 0;
+        margin-top: 10px; }
+      .search-result .modal-enrollment .modal-dialog .form-search .group-input .student {
+        margin-top: 10px;
+        padding: 0; }
+    .search-result .modal-enrollment .modal-dialog .form-search .search-btn {
+      text-align: center; } }
 
 .footer {
   background-color: #0B0127;
