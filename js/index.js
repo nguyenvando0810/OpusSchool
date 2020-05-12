@@ -50,6 +50,38 @@ $(document).ready(function () {
 		dots: true
 	});
 
+	//Slide image
+	$('.slider-for-image').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.slider-nav-image'
+	});
+	$('.slider-nav-image').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		arrows: true,
+		asNavFor: '.slider-for-image',
+		focusOnSelect: true,
+	});
+
+	//Slide video
+	$('.slider-for-video').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.slider-nav-video'
+	});
+	$('.slider-nav-video').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		arrows: true,
+		asNavFor: '.slider-for-video',
+		focusOnSelect: true,
+	});
+
 	let optionValue = document.getElementById("form-select").value;
 	let inputStudentSource = document.getElementById('student-course');
 
@@ -67,75 +99,6 @@ $(document).ready(function () {
 		}
 	})
 });
-
-// Gallery
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-	showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-	showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-	let i;
-	let slides = document.getElementsByClassName("img-detail");
-	let dots = document.getElementsByClassName("thumnail-item");
-	let captionText = document.getElementById("caption-img");
-	if (n > slides.length) {
-		slideIndex = 1
-	}
-	if (n < 1) {
-		slideIndex = slides.length
-	}
-	for (i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";
-	}
-	for (i = 0; i < dots.length; i++) {
-		dots[i].className = dots[i].className.replace(" active", "");
-	}
-
-	slides[slideIndex - 1].style.display = "block";
-	dots[slideIndex - 1].className += " active";
-	captionText.innerHTML = dots[slideIndex - 1].alt;
-}
-
-//Slide Video
-let slideIndexVideo = 1;
-showSlidesVideo(slideIndexVideo);
-
-function plusSlidesVideo(n) {
-	showSlidesVideo(slideIndexVideo += n);
-}
-
-function currentSlideVideo(n) {
-	showSlidesVideo(slideIndexVideo = n);
-}
-
-function showSlidesVideo(n) {
-	let i;
-	let slides = document.getElementsByClassName("video-detail");
-	let dots = document.getElementsByClassName("thumnail-item-video");
-	// let captionText = document.getElementById("caption-img");
-	if (n > slides.length) {
-		slideIndexVideo = 1
-	}
-	if (n < 1) {
-		slideIndexVideo = slides.length
-	}
-	for (i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";
-	}
-	for (i = 0; i < dots.length; i++) {
-		dots[i].className = dots[i].className.replace(" active", "");
-	}
-	slides[slideIndexVideo - 1].style.display = "block";
-	dots[slideIndexVideo - 1].className += " active";
-	// captionText.innerHTML = dots[slideIndexVideo - 1].alt;
-}
 
 let inputStudent = document.getElementById("student");
 
